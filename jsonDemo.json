@@ -1,0 +1,54 @@
+<script>
+var student2 = {"name": {"first": "Jazmyne",
+						"mi": "L.",
+						"last": "Richards"},
+				"sid": "880-33-2244",
+				"address": { "street": "123 Oak Place",
+							"city": "Auburn",
+							"state": "WA",
+							"zip": "88042"},
+				"email": "jrichads@mail.greenriver.edu"
+				};
+
+document.write (student2.name.first + " " + student2.name.mi + " " + student2.name.last + "<br>");
+document.write (student2.sid + "<br>");
+document.write (student2.address.street + "<br>");
+document.write (student2.address.city + "<br>");
+document.write (student2.address.state + "<br>");
+document.write (student2.address.zip + "<br>");
+document.write (student2.email);
+
+var students = [{"name": {"first": "Ben",
+						"mi": "A.",
+						"last": "Brown"},
+				"sid": "840-49-7318",
+				"address": { "street": "512 NW 4th Place",
+							"city": "Renton",
+							"state": "WA",
+							"zip": "98391"},
+				"email": "bbrown44@mail.greenriver.edu"
+				}
+
+				{"name": {"first": "Corey",
+						"mi": "?",
+						"last": "Johnson"},
+				"sid": "840-33-3333",
+				"address": { "street": "123 His mom's house",
+							"city": "His mom's",
+							"state": "WA",
+							"zip": "98000"},
+				"email": "cjohnson@mail.greenriver.edu"
+				}];
+
+
+for (var i in students){
+	document.write (students[i].name.first + " " + students[i].name.mi + " " + students[i].name.last + "<br>");
+document.write (students[i].sid + "<br>");
+document.write (students[i].address.street + "<br>");
+document.write (students[i].address.city + "<br>");
+document.write (students[i].address.state + "<br>");
+document.write (students[i].address.zip + "<br>");
+document.write (students[i].email);
+}
+
+</script>

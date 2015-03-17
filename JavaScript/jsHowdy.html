@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+    <title>Howdy</title>
+
+<script>
+//called when the html on the page has finished rendering
+window.onload = function()
+
+{
+//Howdy Button
+    var btnHowdy = document.getElementById('btn-Howdy');
+        btnHowdy.onclick = sayHowdy;
+
+//Ciao Button
+    var btnCiao = document.getElementById("btn-Ciao");
+        btnCiao.onclick = sayCiao;
+}
+
+function sayCiao()
+{
+    alert("Ciao, paisan!")
+}
+
+function sayHowdy()
+{
+    alert("Howdy, partner!");
+}
+</script>
+</head>
+
+<body>
+<button id='btn-Howdy'>Say Howdy</button>
+<button id='btn-Ciao'>Dire Ciao</button>
+</body>
+</html>

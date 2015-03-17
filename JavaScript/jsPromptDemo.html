@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+    <title>Page Title</title>
+</head>
+
+<body>
+<script>
+"use strict";
+var age = prompt("What is your age?");
+var type;
+var fare;
+
+    if (age > 60)
+        {
+            type = "Senior";
+            fare = "$5.00";
+        }
+    else if (age >= 20)
+        {
+            type = "Adult";
+            fare = "$7.00";
+        }
+    else if (age >= 13)
+        {
+            type = "Student";
+            fare = "$6.00";
+        }
+    else
+        {
+            type = "Child";
+            fare = "Free";
+        }
+    document.write(type + " fare is " + fare);
+    
+    
+</script>
+</body>
+</html>

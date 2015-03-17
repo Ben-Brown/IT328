@@ -1,0 +1,24 @@
+<script>
+var names = ["Bach <br>", "Brahms <br>", "Schubert <br>", "Mozart <br>"];
+    
+    for(var i in names){
+        document.write(names[i] + "<br>");    
+    }
+    document.write(names.length);
+    
+    names.unshift("<br>Handel <br>");
+    printArr(names);
+    names.pop();
+    printArr(names);
+    names.sort();
+    printArr(names);
+    names.reverse();
+    printArr(names);
+    
+    function printArr(array){
+        for (var i in names){
+            document.write(names[i]+ "<br>");
+        }
+    }
+    
+</script>

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+    <title>String Formatting</title>
+</head>
+
+<body>
+<script>
+    var text = "Hello, world!";
+    document.write("Text: " + text + "<br>");
+    document.write("Text: " + text.toUpperCase() + "<br>");
+    document.write("First character: " + text.charAt(0) + "<br>");
+    document.write("String Length: " + text.length + "<br>");
+    document.write("Last Character: " + text.charAt(text.length - 1) + "<br>");
+    document.write("Index of 'o': " + text.indexOf('o') + "<br>");
+    document.write("Replace: " + text.replace("Hello", "Hi") + "<br>");
+    
+    var date = prompt("Enter your birthday (M/D/YYYY): ");
+    var birthday = new Date(date);
+    var today = new Date();
+    var years = today.getFullYear() - birthday.getFullYear();
+    
+    //Reset the birthday to the current year.
+    birthday.setFullYear(today.getFullYear());
+    
+    //If the user's birthday has not occurred yet this year, subtract 1.
+    if (today < birthday) {
+        years--;
+    }
+    document.write("You are " + years + " years old.");
+</script>
+
+
+</body>
+</html>

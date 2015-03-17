@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+    <title>BAS Contact Form</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="http://benbrown.greenrivertech.net/IT328/mockup/BAScontact.css"></script> 
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <!--<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>-->
+    <link href="css/bootstrap.min.css" rel="stylesheet">   
+    
+</head>
+    
+<body>
+<div class="container">    
+    <div id="contact"><h2 class="text-center">Contact Info</h2></div>
+    <div class="wholeThing"> 
+        <form class="form-inline" method="post" action="page2.php" role="form">
+            <div class="form-group">
+              <div id="input">
+                <label for="First">First:&nbsp&nbsp</label>
+                <input type="text" class="form-control" id="first" placeholder="First Name">
+              </div>
+            </div>
+            <div class="form-group">
+              <div id="input">
+                <label for="last">&nbsp&nbspLast:&nbsp&nbsp&nbsp</label>
+                <input type="text" class="form-control" id="last" placeholder="Last Name">
+              </div>
+            </div>
+            <div class="inline-group">
+              <div id="input">
+                <label for="email">Email:</label>
+                    <input type="text" class="form-control" id="email" placeholder="Email">&nbsp
+             
+                <label for="phone">&nbsp&nbspPhone:</label>
+                    <input type="text" class="form-control" id="phone" placeholder="Phone">
+              </div>
+            </div>
+        </form>
+    
+    <!--Radio buttons to choose degree plan-->
+        <div class="radioBtn">
+         
+            <div class="deadlines">
+                <!--Make th padding different from td-->
+                <p class="dead">Financial Aid Deadlines</p>
+                <table>
+                        <tr>
+                            <td>Fall quarter:</td>
+                            <td>&nbsp&nbsp&nbspAug 15</td>
+                        </tr>
+                        <tr>
+                            <td>Winter quarter:</td>
+                            <td>&nbsp&nbsp&nbspDec 15</td>   
+                        </tr>
+                        <tr>
+                            <td>Spring quarter:</td>
+                            <td>&nbsp&nbsp&nbspMar 15</td>  
+                        </tr>
+                        <tr>
+                            <td>Summer quarter:</td>
+                            <td>&nbsp&nbsp&nbspJune 1</td>   
+                        </tr>
+                    </div>
+                </table>
+            </div>
+         
+         
+        <p class="head">What degree are you interested in?</p>
+            
+            <span class="degreeHighlights">
+                
+                <input type="radio" id="SD" name="degree" value="SD"><a class="degrees" id="popover" data-
+                trigger="hover" href="Degree website is here">&nbsp&nbspSoftware Development</a><br>
+                <div>
+                    <p class="pop">We prepare students for the real world by teaching the high demand skills that employers 
+                    are seeking</p>
+                    <ul>
+                        <li>C, C++</li>
+                        <li>Java</li>
+                        <li>Linux Administration</li>
+                        <li>Web Development & Design</li>
+                    </ul>
+                    <p class="pop">Gain hands on experience by building real things on your own or as part of a team.
+                    </p>
+                    <ul>
+                        <li>Learn how to code in our computer-lab classrooms</li>
+                        <li>Receive one-on-one assistance from your instructor</li>
+                        <li>Develop and design real websites for industry/community partners</li>
+                        <li>Build a portfolio with the code you write in class</li>
+                    </ul>
+                    <p class="pop">Make yourself invaluable with a well-rounded skill set.  Learn how to:</p>
+                    <ul>
+                        <li>Be a self-sufficient programmer</li>
+                        <li>Create robust, efficient and reliable programs</li>
+                        <li>Build and  maintain virtual development environments</li>
+                    </ul>    
+                    <a class="degrees" href="http://www.greenriver.edu/academics/divisions/technology/it-programs/it-programs/degrees/bas-software-development.htm">Program 
+                    Details </a>
+                 </div><br>
+            </span> 
+                
+            
+            <span class="degreeHighlights">
+                <input type="radio" id="NAS" name="degree" value="NAS"><a class="degrees" href="NAS info pop-up">&nbsp&nbspNetwork Security & 
+                Administration</a><br>
+                
+                  <div>
+                    <p class="pop">We prepare students for the real world by teaching the high demand skills that employers 
+                    are seeking</p>
+                    <ul>
+                        <li>PC Repair</li>
+                        <li>Windows Server Administration</li>
+                        <li>Linux Administration</li>
+                        <li>Routing and Switching (Cisco)</li>
+                        <li>Newtwork Security</li>
+                    </ul>
+                    <p class="pop">Gain hands on experience by building real things on your own or as part of a team.
+                    </p>
+                    <ul>
+                        <li>Work with active routing and switching hardware in our fully equipped classrooms</li>
+                        <li>Receive one-on-one assistance from you instructor</li>
+                        <li>Build a portfolio with the work you do in class</li>
+                    </ul>
+                    
+                    <p class="pop">Make yourself invaluable with a well-rounded skill set.  Learn how to:</p>
+                    <ul>
+                        <li>Install and configure servers</li>
+                        <li>Monitor network traffic</li>
+                        <li>Build and maintain physical and virtual networking environments</li>
+                        <li>Secure network devices</li>
+                    </ul>
+                    <a class="degrees" href="http://www.greenriver.edu/academics/divisions/technology/it-programs/it-programs/degrees/bas-network-administration-and-security.htm">Program 
+                    Details</a>
+                  
+                </div>
+             </span><br>
+             <div>
+                    <input type="radio" name="degree" value = "NA"><a class="degrees" href="dunno">&nbsp&nbspUndecided</a>
+            </div>
+            </div>
+            </div>
+            <label class="col-md-4 control-label" for="singlebutton"></label>
+            <div class="col-md-4">
+                <button id="singlebutton" name="singlebutton" class="btn btn-primary center-block">
+                Continue
+                </button>
+            </div>   
+        </div>
+        
+</div>
+
+<script>
+    var span = document.querySelectorAll('.degreeHighlights');
+    for (var i = span.length; i--;) {
+        (function () {
+        var t;
+        span[i].onmouseover = function () {
+            hideAll();
+            clearTimeout(t);
+            this.className = 'degreeHighlightsHover';
+    };
+        span[i].onmouseout = function () {
+                var self = this;
+                t = setTimeout(function () {
+                self.className = 'degreeHighlights';
+            }, 300);
+            };
+        })();
+        }
+    
+    function hideAll() {
+    for (var i = span.length; i--;) {
+    span[i].className = 'degreeHighlights'; 
+    }
+};
+</script>     
+</body>    

@@ -1,0 +1,12 @@
+extends layout
+block content
+	h1= title
+
+	form#formAddUser(name="addbook", method="post", action="/addbook")
+			input#inputBookTitle(type="text", placeholder="book title", name="booktitle")
+			input#inputAuthorFirst(type="text", placeholder="first name", name="authorfirst")
+			input#inputAuthorLast(type="text", placeholder="last name", name="authorlast")
+			input#inputBookPrice(type="text", placeholder="price", name="price")
+			input#inputBookUrl(type="text", placeholder="url", name="url")
+
+			button#btnSubmit(type="submit") submit

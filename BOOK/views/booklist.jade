@@ -1,0 +1,11 @@
+extends layout
+
+block content
+	h1 #{title}
+	p Welcome to #{title}
+		ul
+			each book in booklist
+				li 
+					a(href="#{book.url}")=book.title
+					span  (#{book.author.last}, #{book.author.first})
+					span - $#{book.price}   

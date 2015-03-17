@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+    <title>Page Title</title>
+</head>
+
+<body>
+<p>Lab 14</p>
+
+<p>COnfiguring Network Access Protection (NAP)</p>
+
+<p>This lab contains the following exercises and activities:</p>
+
+<p>Exercise 14.1</p>
+
+<p>Installing Health Registration Authority Role on an NPS Server </p>
+
+<p>Exercise 14.2</p>
+
+<p>Configuring NAP Enforcement for DHCP</p>
+
+<p>Exercise 14.3</p>
+
+<p>Configuring SHV and Health Policies</p>
+
+<p>Lab Challenge </p>
+
+<p>Configuring Clients for NAP</p>
+
+<p>Exercise 14.1</p>
+
+<p>Installing Health Registration Authority Role on an NPS Server</p>
+
+<p>Overview</p>
+
+<p>Network Access Protection (NAP), which is used to control who can access a network based on the security health of a client, is one of the more complicated installations during this course. Before you can configure NAP, you must add the Health Registration Authority role to the current NPS installation on RWDC01 so that it can monitor the connections on the NPS server..</p>
+
+<p>Completion time</p>
+
+<p>10 minutes</p>
+
+<p><b>Mindset Questions: So far, you have configured NPS. However, NPS also supports Network Access Protection. Explain what NAP is and how it is used to protect your network?</b></p>
+
+<p>NAP is Microsoft's software for controlling network access for computers based on the health of the host. </p>
+
+<p>uestion 1</p>
+
+<p>To use NAP with DHCP, which server do you need to install NPS on?</p>
+
+<p>DHCP Server</p>
+
+<p>Exercise 14.2</p>
+
+<p>Configuring NAP Enforcement for DHCP</p>
+
+<p>Overview</p>
+
+<p>During this exercise, you configure NAP enforcement for DHCP, specify the remediation servers, and enable NAP for a DHCP scope.</p>
+
+<p>Completion time</p>
+
+<p>20 minutes</p>
+
+<p><b>Mindset Question: When you configure NAP enforcement for DHCP, what are the basic steps that must be performed?</b></p>
+
+<p>1. Configure a DHCP server and create the appropriate DHCP scopes.</p>
+
+<p>2. Install NPS on the DHCP server.</p>
+
+<p>3. Run the NAP Wizard to configure the connection request policy, network policy, and </p>
+
+<p>NAP health policy. Define the remediation severs, which noncompliant clients can </p>
+
+<p>access.</p>
+
+<p>4. Enable NAP for individual DHCP scopes.</p>
+
+<p>5. Enable the NAP DHCP Quarantine Enforcement Client and start the NAP service on </p>
+
+<p>NAP-capable client computers.</p>
+
+<p> <br />
+<b>6.</b> Take a screen shot of the NAP Client Configuration window by pressing Alt+Prt Scr and then paste it into your Lab14_worksheet file in the page provided by pressing Ctrl+V.</p>
+
+<table cellspacing="0" cellpadding="0" hspace="0" vspace="0" align="center"> 
+<tbody>
+<tr>
+<td valign="top" align="left" > </td>
+</tr>
+
+</tbody>
+</table>
+
+<br />
+<table cellspacing="0" cellpadding="0" hspace="0" vspace="0"> 
+<tbody>
+<tr>
+<td valign="top" align="left" > </td>
+</tr>
+
+</tbody>
+</table>
+
+<br />
+<p> <br />
+<b>11. </b>Take a screen shot of the Network Access Protection Agent Properties dialog box by pressing Alt+Prt Scr and then paste it into your Lab08_worksheet file in the page provided by pressing Ctrl+V.</p>
+
+<p>Question 2</p>
+
+<p>What remediation servers should you include?</p>
+
+<p>DHCP, DNS, and WINS</p>
+
+<p>and Health Policies</p>
+
+<p>Overview</p>
+
+<p>During this exercise, to enforce NAP, you configure System Health Validator and Health Policies.</p>
+
+<p>Completion time</p>
+
+<p>10 minutes</p>
+
+<p>Question 3</p>
+
+<p>Which options are already selected for the Windows Security Health Validator?</p>
+
+<p>All of the options under Firewall Settings, Antivirus Settings, Spyware Protection Settings, and Automatic Updates Settings are selected.</p>
+
+<p>Question 4</p>
+
+<p>Which Windows Security Health Validator is configured?</p>
+
+<p>Windows Security Health Validator default configuration.</p>
+
+<p>Question 5</p>
+
+<p>What is the Client SHV checks configured as?</p>
+
+<p>Client passes all SHV checks.</p>
+
+<p>Question 6</p>
+
+<p>What is the Client SHV checks configured as?</p>
+
+<p>See above. </p>
+
+<p>Lab REview Questions</p>
+
+<p><b>Completion time</b></p>
+
+<p><b>10 minutes</b></p>
+
+<p><b>1. </b>In Exercise 14.1, you installed support for the Health Registration Authority. What does the Health Registration Authority do?</p>
+
+<p>It runs Windows Server 2012 and IIS and obtains health certificates from a certification authority for compliant computers. </p>
+
+<p><b>2. </b>In Exercise 14.2, what command opened the NAP Client Configuration console?</p>
+
+<p>napclcfg.msc</p>
+
+<p><b>3. </b>In Exercise 14.2, what allows a computer to get Windows update so that it can be compliant when using NAP?</p>
+
+<p>Remediation server.</p>
+
+<p><b>4. </b>In Exercise 14.3, when using NAP, what defines the requirements for client computers that connect to the network?</p>
+
+<p>System Health Validators</p>
+
+<p>Lab Challenge</p>
+
+<p>Configuring Clients for NAP</p>
+
+
+
+</body>
+</html>

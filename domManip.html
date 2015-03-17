@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+    <title>Manipulating the DOM</title>
+     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    
+</head>
+
+<body>
+    
+    
+</body>
+<script>
+    // Add a header to the page
+    var $title = $("<h3>");
+    $title.text = ("Shopping List");
+    $("body").append($title);
+    
+    // Make a list
+    var $list =("<ul>");
+    
+    //Add the paragraph to the page
+    var $item1 = $("<li>");
+    var $item2 = $("<li>");
+    var $item3 = $("<li>");
+    $item1.text("kale");
+    $item2.text("eggs");
+    $item3.text("apples");
+    
+    // Add items to list
+    $list.append($item1);
+    $list.append($item2);
+    $list.append($item3);
+    
+    // Add the list to the body
+    $("body").append($list);
+    </script>
+</html>

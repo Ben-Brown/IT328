@@ -1,0 +1,102 @@
+.form-group > required{
+    content: "*";
+    color:red;
+}
+
+.form-inline {
+    padding:10px;
+    margin-left: 2em;
+}
+
+.form-inline > * {
+    margin:10px 3px !important;
+}
+
+.container {
+    max-width: 700px; 
+    background-color: #ddd;
+    border-radius: 0 0 5px 5px;
+    padding-bottom: 1em;
+    padding-right: 3em;
+}
+
+body {
+    padding-left: 45px;
+    padding-right: 45px;
+}
+
+.degreeHighlights {
+    position:relative;
+}
+
+.degreeHighlights > a {
+    font-size: 12px;
+}
+
+.degreeHighlights div {
+    display: none;
+}
+
+.degreeHighlightsHover {
+    position:relative;
+}
+
+.degreeHighlightsHover div {
+    display:block;
+    position: absolute;
+    width: 40em;
+    top:.3em;
+    top:5px;
+    left:75px;
+    box-shadow:5px 16px 16px 5px;
+    z-index:1000;
+    background-color: #DDD;
+    padding:3px;
+    border-radius:4px;
+}
+
+.category{
+    margin-left: 4em;
+    margin-bottom: 2em;
+    margin-top: 2em;
+}
+
+.col-md-4{
+    padding-top: 1.5em; 
+    padding-bottom: 1.5em;
+}
+
+#current {
+    padding-left: 2em;
+    display: none;
+}
+
+.accordion-inner{
+    padding-top: 10px;
+    background: #e3f2ff;
+    border-radius: 0 0 5px 5px;
+    overflow: auto;
+    line-height: 1.3em;
+}
+.deadlines{
+    text-align: left;
+    float: right;
+    width: 38%;
+    background: white;
+    border: outset white;
+    border-radius: 8px;
+    padding: 1em;
+}
+
+p.dead{
+    color: red;
+    font-weight: bold;
+}
+
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    /* display: none; <- Crashes Chrome on hover */
+    -webkit-appearance: none;
+    margin: 0; /* <-- Apparently some margin are still there even though it's hidden */
+}

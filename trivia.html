@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+    <title>Page Title</title>
+</head>
+
+<body>
+<script>
+    /*Ben Brown
+      Logan Hoerth
+      1/12/15
+      trivia.html
+      This program asks the user useless trivia about themselves.
+    */
+    
+    "use strict";
+    var name = prompt("Hi, what is your name?");
+    var age = prompt("Hi, what is your age?");
+    var weight = prompt("Hi, what is your weight?");
+    
+    alert("If poet ee cummings were to email you, he'd address you as " + name.toLowerCase() + ". But if ee were mad, he would call you " + name.toUpperCase());
+    
+    age *= 365;
+    age *= 24;
+    age *= 3600;
+    
+    alert("You're over " + age + " seconds old");
+    
+    alert("Did you know that on the moon you would weigh only " + (weight/6).toFixed(2) + " pounds?");
+    alert("On the sun, you'd weigh " + (weight*27.1).toFixed(2)  + "lbs (but, ah.... not for long).");
+    
+    
+    
+</script>
+
+
+</body>
+</html>

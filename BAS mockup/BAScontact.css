@@ -1,0 +1,124 @@
+.form-inline {
+    padding:10px;
+    margin-left: 3em;
+}
+
+.form-inline > * {
+    margin:10px 3px !important;
+    color: silver;
+    text-shadow: 1.5px 1.5px #282828;
+}
+
+.container {
+    max-width: 700px; 
+    background-color: #238E23;
+    border-radius: 0 0 5px 5px;
+    padding-bottom: 1em;
+    padding-right: 5em;
+}
+
+#contact {
+    color: silver;
+    text-shadow: 1.5px 1.5px #282828;
+}
+
+#input {
+    font-size: 16px;
+}
+
+body {
+    padding-left: 45px;
+    padding-right: 45px;
+}
+
+a.degrees{
+    color: silver;
+    font-size: 16px;
+    text-shadow: 1.2px 1.2px #282828;
+}
+
+.degreeHighlights {
+    position:relative;
+}
+
+.degreeHighlights div {
+    display: none;
+}
+
+.degreeHighlightsHover {
+    position:relative;
+}
+
+.degreeHighlightsHover div {
+    display:block;
+    position: absolute;
+    width: 40em;
+    top:.3em;
+    top:10px;
+    left:200px;
+    box-shadow:5px 16px 16px 5px #282828;
+    z-index:1000;
+    background-color: #238E23;
+    padding:3px;
+    border-radius:4px;
+}
+
+.radioBtn {
+    color: #4099ff;
+    margin-left: 3em;
+    margin-bottom: 2em;
+    margin-top: 2em;
+    margin-right:3em;
+}
+
+#offset {
+    right: 500px;
+}
+
+.deadlines {
+    text-align: left;
+    float: right;
+    width: 38%;
+    background: silver;
+    border: outset white;
+    border-radius: 8px;
+    padding: 1em;
+}
+
+p.head {
+    background-color: #238E23;
+    color: silver;
+    text-shadow: 1.5px 1.5px black;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+p.pop {
+    background-color: #238E23;
+    font-size: 16px;
+    color: silver;
+    text-shadow: 1.5px 1.5px #282828;
+}
+
+li {
+    background-color: #238E23;
+    color: silver;
+    text-shadow: 1px 1px #282828;
+}
+
+p.dead {
+    color: red;
+    font-size: 18px;
+    font-weight: !important;
+    text-shadow: 1px 1px lightgray;
+}
+
+td {
+    color: #238E23;
+    text-shadow: 1px 1px lightgray;
+}
+
+.col-md-4 {
+    padding-top: 2.5em; 
+    padding-bottom: 1.5em;
+}
